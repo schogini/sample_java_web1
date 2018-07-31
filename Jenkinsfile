@@ -17,7 +17,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        sh 'ls -l'
+        sh 'sudo cp -p ./target/SreeJavaExample.war /var/lib/tomcat8/webapps/sree-bo1.war'
       }
     }
   }
