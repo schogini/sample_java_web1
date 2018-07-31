@@ -13,7 +13,11 @@ pipeline {
 
 
 '''
-        sh 'stash name: \'war\', includes: \'target/**\''
+      }
+    }
+    stage('Deploy') {
+      steps {
+        sh 'ls -l'
       }
     }
   }
